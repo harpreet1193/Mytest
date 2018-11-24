@@ -1,0 +1,26 @@
+class prime
+{
+	boolean main ()
+	{
+		int check=9;
+		int i ;
+		int count =0 ; 
+		for i = 2 , num - 1
+		{
+			if ( ( num % i ) == 0 )
+			{
+				count = count + 1;
+			}
+		}
+		if ( count > 1 )
+		{
+			//not a prime
+			return 0;
+		}
+		else
+		{
+			//is a prime
+			return 1;
+		}
+	}
+}

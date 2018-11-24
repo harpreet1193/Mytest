@@ -1,0 +1,23 @@
+class Hanoi
+{
+	void towerOfHanoi(int n, int a, int b, int c)
+	{
+		if ( n == 1)
+		{
+			//print ("Move disk 1 from rod rod a to rod b")
+			return; 
+		}
+		else
+		{
+			towerOfHanoi( n - 1, a , c , b);
+			//print (" Move disk n from rod a to rod b ")
+			towerOfHanoi(n - 1, c , b , a);
+		}
+	} 
+	void main ()
+	{
+		int n;
+		n = 4;
+		towerOfHanoi(n , 1 , 2 , 3);
+	}
+}
